@@ -1,0 +1,16 @@
+h1 {
+ text-align: center;
+ font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+.button{
+background-color: teal;
+color: white;
+}
+p {
+   text-align: center;
+   font-family: fantasy;
+   margin: 1em; 
+   color: white;
+   border: solid;
+   
+}
