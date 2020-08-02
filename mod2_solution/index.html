@@ -9,33 +9,33 @@
   </head>
 <body >
   <div class="container">
-  <h1>Shopping List Check Off</h1>
+  <h1>Lista de compras</h1>
 
   <div class="row">
 
     <!-- To Buy List -->
     <div class="col-md-6" ng-controller="ToBuyController as buy">
-     <h2>To Buy:</h2>
+     <h2>Para comprar:</h2>
      <ul>
        <li ng-repeat="item in buy.items">
-        Buy {{item.quantity}} {{item.name}} 
-        <button class="btn btn-default" ng-click="buy.toBuy($index);"> <span class="glyphicon glyphicon-ok"></span> Bought</button>
+        Comprar {{item.quantity}} {{item.name}} 
+        <button class="btn btn-default" ng-click="buy.toBuy($index);"> <span class="glyphicon glyphicon-ok"></span> Comprar</button>
       </li>
      </ul>
      <div ng-if="buy.items.length == 0" class="emptyMessage">
-       Everything is bought!</div>
+       ¡Compraste todo!</div>
     </div>
 
     <!-- Already Bought List -->
     <div class="col-md-6" ng-controller="AlreadyBoughtController as bought">
-     <h2>Already Bought:</h2>
+     <h2>Comprado:</h2>
      <ul>
        <li ng-repeat="item in bought.items">
         {{item.quantity}} {{item.name}}
         </li>
      </ul>
      <div ng-if="bought.items.length == 0" class="emptyMessage">
-       Nothing bought yet.
+       No has comprado nada aún
       </div>
     </div>
   </div>
